@@ -127,16 +127,20 @@ export default function UsersPage() {
   };
 
   return (
-    <Box p={3} pt={8}>
+    <Box p={3}>
       <Box
+        px={2}
         mb={2}
-        pt={3}
         display="flex"
         justifyContent="space-between"
         alignItems="center"
-        sx={{ backgroundColor: "white", padding: "10px", borderRadius: "8px" }}
+        sx={{
+          backgroundColor: "rgba(255, 255, 255, 0.6)",
+          borderRadius: "8px",
+          backdropFilter: "blur(4px)",
+        }}
       >
-        <Typography variant="h5" mb={2} color="black" p={2}>
+        <Typography variant="h4" mb={2} color="black" fontWeight={20} p={2}>
           Doctor Management
         </Typography>
         <Box display="flex" alignItems="center">
@@ -181,9 +185,16 @@ export default function UsersPage() {
         </Box>
       </Box>
 
-      <TableContainer component={Paper}>
+      <TableContainer
+        component={Paper}
+        sx={{
+          backgroundColor: "rgba(255, 255, 255, 0.7)",
+          borderRadius: "8px",
+          backdropFilter: "blur(4px)",
+        }}
+      >
         <Table>
-          <TableHead sx={{ backgroundColor: "#f5f5f5" }}>
+          <TableHead>
             <TableRow>
               <TableCell>
                 <strong>ID</strong>
@@ -250,10 +261,9 @@ export default function UsersPage() {
         onPageChange={handleChangePage}
         onRowsPerPageChange={handleChangeRowsPerPage}
         sx={{
-          backgroundColor: "white",
-          boxShadow: "none",
+          backgroundColor: "rgba(255, 255, 255, 0.8)",
           borderRadius: "8px",
-          padding: "10px",
+          backdropFilter: "blur(4px)",
         }}
       />
 

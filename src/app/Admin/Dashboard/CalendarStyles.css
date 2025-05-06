@@ -1,0 +1,17 @@
+.react-calendar {
+    width: 100%;
+    border: none;
+    background-color: #042f3a;
+    font-family: "Roboto", sans-serif;
+}
+
+.react-calendar__tile--active {
+    background: #032558 !important;
+    color: rgb(24, 23, 23) !important;
+}
+
+.today-tile {
+    background: #4caf50 !important;
+    color: rgb(10, 9, 9) !important;
+    border-radius: 50%;
+}

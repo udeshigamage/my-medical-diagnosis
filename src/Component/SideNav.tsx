@@ -39,8 +39,11 @@ export default function SideNav() {
         width: 200,
         flexShrink: 0,
         [`& .MuiDrawer-paper`]: {
-          width: 200,
+          width: 250,
           boxSizing: "border-box",
+          background:
+            "linear-gradient(to bottom,rgb(17, 29, 51),rgb(13, 14, 15))", // blue gradient
+          color: "#fff", // white text
         },
       }}
     >
@@ -53,7 +56,7 @@ export default function SideNav() {
         {/* Users with sub-menu */}
         <ListItemButton onClick={handleUserClick}>
           <ListItemIcon>
-            <PeopleIcon />
+            <PeopleIcon sx={{ color: "white" }} />
           </ListItemIcon>
           <ListItemText primary="Users" />
           {userMenuOpen ? <ExpandLess /> : <ExpandMore />}
@@ -64,7 +67,7 @@ export default function SideNav() {
             <Link href="/Admin/Dashboard/User" passHref>
               <ListItemButton component="a" sx={{ pl: 4 }}>
                 <ListItemIcon>
-                  <LocalHospitalIcon />
+                  <LocalHospitalIcon sx={{ color: "white" }} />
                 </ListItemIcon>
                 <ListItemText primary="All users" />
               </ListItemButton>
@@ -72,7 +75,7 @@ export default function SideNav() {
             <Link href="/Admin/Dashboard/Doctor" passHref>
               <ListItemButton component="a" sx={{ pl: 4 }}>
                 <ListItemIcon>
-                  <LocalHospitalIcon />
+                  <LocalHospitalIcon sx={{ color: "white" }} />
                 </ListItemIcon>
                 <ListItemText primary="Doctor Management" />
               </ListItemButton>
@@ -80,7 +83,7 @@ export default function SideNav() {
             <Link href="/Admin/Dashboard/Patient" passHref>
               <ListItemButton component="a" sx={{ pl: 4 }}>
                 <ListItemIcon>
-                  <LocalHospitalIcon />
+                  <LocalHospitalIcon sx={{ color: "white" }} />
                 </ListItemIcon>
                 <ListItemText primary="Patient Management" />
               </ListItemButton>
@@ -90,7 +93,7 @@ export default function SideNav() {
 
         <ListItemButton onClick={handleclick}>
           <ListItemIcon>
-            <PeopleIcon />
+            <PeopleIcon sx={{ color: "white" }} />
           </ListItemIcon>
           <ListItemText primary="Diagnosis Monitoring" />
           {DiagnosisMenuOpen ? <ExpandLess /> : <ExpandMore />}
@@ -100,7 +103,7 @@ export default function SideNav() {
             <Link href="/Admin/Dashboard/User" passHref>
               <ListItemButton component="a" sx={{ pl: 4 }}>
                 <ListItemIcon>
-                  <LocalHospitalIcon />
+                  <LocalHospitalIcon sx={{ color: "white" }} />
                 </ListItemIcon>
                 <ListItemText primary="All users" />
               </ListItemButton>
@@ -108,7 +111,7 @@ export default function SideNav() {
             <Link href="/Admin/Dashboard/Doctor" passHref>
               <ListItemButton component="a" sx={{ pl: 4 }}>
                 <ListItemIcon>
-                  <LocalHospitalIcon />
+                  <LocalHospitalIcon sx={{ color: "white" }} />
                 </ListItemIcon>
                 <ListItemText primary="Doctor Management" />
               </ListItemButton>
@@ -116,7 +119,7 @@ export default function SideNav() {
             <Link href="/Admin/Dashboard/Patient" passHref>
               <ListItemButton component="a" sx={{ pl: 4 }}>
                 <ListItemIcon>
-                  <LocalHospitalIcon />
+                  <LocalHospitalIcon sx={{ color: "white" }} />
                 </ListItemIcon>
                 <ListItemText primary="Patient Management" />
               </ListItemButton>

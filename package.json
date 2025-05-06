@@ -16,6 +16,7 @@
     "formik": "^2.4.6",
     "next": "15.3.1",
     "react": "^19.0.0",
+    "react-calendar": "^5.1.0",
     "react-dom": "^19.0.0",
     "recharts": "^2.15.3",
     "yup": "^1.6.1"
